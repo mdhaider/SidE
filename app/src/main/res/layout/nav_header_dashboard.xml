@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/drawerView"
+    android:background="#16476F"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/menu_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/nav_header_vertical_spacing"
+            android:src="@drawable/ic_profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingLeft="@dimen/nav_padding_left">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/userNameInNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/textColorPrimary" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/userOrgInNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorPrimary"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/userAccTypeInNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorPrimary"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/userAnIDInNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorPrimary"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/nav_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.1"
+            android:visibility="gone"
+            android:src="@mipmap/expand_arrow" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
